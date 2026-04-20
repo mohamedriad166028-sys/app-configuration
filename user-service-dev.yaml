@@ -9,6 +9,11 @@ spring:
     hibernate:
       ddl-auto: update
     database-platform: org.hibernate.dialect.PostgreSQLDialect
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 
 #  h2:
 #    console:
@@ -19,6 +24,11 @@ spring:
 #    show-sql: true
 #    hibernate:
 #      ddl-auto: create
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 server:
   port: 8082
