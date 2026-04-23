@@ -31,7 +31,7 @@ management:
         include: "*"
   endpoint:
     shutdown:
-      enabled: true
+      access: unrestricted
 eureka:
   client:
     serviceUrl:
